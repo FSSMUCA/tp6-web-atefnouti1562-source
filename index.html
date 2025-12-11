@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Application Web – Calculatrice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Mini-Application Web – Calculatrice Avancée</h1>
+</header>
+
+<main>
+
+    <section class="card">
+        <h2>Calculatrice</h2>
+
+        <form id="calcForm">
+            <div class="input-group">
+                <label>Nombre A :</label>
+                <input type="number" id="numberA">
+            </div>
+
+            <div class="input-group">
+                <label>Nombre B :</label>
+                <input type="number" id="numberB">
+            </div>
+
+            <div class="input-group">
+                <label>Opération :</label>
+                <select id="operation">
+                    <option value="+">+</option>
+                    <option value="-">−</option>
+                    <option value="*">×</option>
+                    <option value="/">÷</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn">Calculer</button>
+        </form>
+
+        <p id="errorMsg" class="error"></p>
+    </section>
+
+    <section class="card history">
+        <h2>Historique des opérations</h2>
+        <ul id="historyList"></ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>TP6 – Mini-Application Web | <a href="info.php">Page PHP</a></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
